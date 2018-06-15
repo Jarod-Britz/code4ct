@@ -1,0 +1,126 @@
+body {
+  background-color: black; }
+
+.topnav {
+  overflow: hidden;
+  padding: 15px; }
+
+.topnav .icon {
+  display: none; }
+
+.active {
+  background-color: #ddd;
+  color: black; }
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto; }
+
+nav {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border: solid 2px pink;
+  position: sticky;
+  top: 1.5%;
+  margin: 0; }
+  nav div img {
+    height: 40px;
+    border: black;
+    float: left;
+    position: absolute;
+    left: 35px;
+    top: 15px; }
+
+.topnav a {
+  text-decoration: none;
+  color: pink;
+  padding: 10px;
+  border: solid 2px pink;
+  border-radius: 12px;
+  display: inline; }
+
+.topnav a:hover {
+  color: purple;
+  border: solid 2px purple; }
+
+#reset {
+  color: none;
+  padding: 0;
+  border: none; }
+
+section {
+  background: url("../images/Code4CT-homepage.jpg") center, linear-gradient(180deg, #2b3946, #384a5b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 13em 0;
+  color: white; }
+  section article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(227, 84, 187, 0.5);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px; }
+  section h1 {
+    text-align: center;
+    font-size: 40px;
+    opacity: 1; }
+  section p {
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+    color: #fff; }
+
+.four_parts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: white; }
+  .four_parts img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; }
+
+/* Making it responsive for the smart phone */
+@media screen and (max-width: 360px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+
+  .topnav a.icon {
+    float: right;
+    display: block; }
+
+  .topnav.responsive {
+    position: relative; }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+
+  .four_parts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white; }
+    .four_parts img {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto; }
+
+  section article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(227, 84, 187, 0.5);
+    margin: 8%; } }
+
+/*# sourceMappingURL=style.css.map */

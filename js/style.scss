@@ -1,0 +1,367 @@
+//Start of the css
+//Adding a font to the entire page
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  //Styling the nav
+  nav{
+      height: 80px;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1;
+    }
+    //Container for the whole page
+  #container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  }
+  .search-container {
+    float: right;
+  }
+  //The input for the search bar
+  input[type=text] {
+    margin-top: 10%;
+    font-size: 15px;
+    border: none;
+    float: right;
+  }
+  //The search button
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8%;
+    margin-right: 16px;
+    background: pink;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  //Adding a hover effect over the search button
+  .search-container button:hover {
+    background: pink;
+  }
+  //Hiding the over flow of the nav
+  .topnav {
+    overflow: hidden;
+    //Editing the logo
+    img{
+        width: 150px;
+        height: 50px;
+        top: 5%;
+    }
+    //Styling the links
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  //Adding a hover effect on the links
+  .topnav a:hover {
+    color: purple;
+  }
+  //Changing the background-color of the logo
+  .active {
+    color: white;
+  }
+  //Hiding the hamburger menu icon
+  .topnav .icon {
+    display: none;
+  }
+  .mySlides {
+      display: none
+    }
+    //Container for the slideshow
+    .slideshow_container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        //Sizing the images
+        img{
+            width: 100%;
+        }
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 1% 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .dot:hover {
+        background-color: #717171;
+      }
+    //Section with slider  
+  .first_section{
+    background: url("../images/Code4CT-homepage.jpg") center,linear-gradient(180deg,#2b3946,#384a5b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 9em 26%;
+    color: white;
+    //styling the buttons
+    button{
+        width: 150px;
+        border: solid 2px white;
+        color: white;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+    //adding a hover effect for the buttons
+    button:hover{
+        background-color: grey;
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+  }
+  //Making a grid for the heading and paragraph
+  article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(400, 120, 187, 0.5);
+    padding: 20px;
+}
+    //Styling the heading
+    h1{
+        margin: 0;
+        text-align: center;
+        font-size: 40px;
+        opacity: 1;
+    }
+    //Styling the paragraph
+    p{
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        opacity: 1;
+        color: #fff;
+    }
+    
+//Who We Are section
+.second_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: grey;
+    //Aligning the h2
+    h2{
+        text-align: left;
+        margin-left: 10%;
+    }
+    //Putting the images in a grid
+    .four_images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        //edting the 4 images
+        img{
+            width: 300px;
+            height: 230px;
+            margin: 0 auto;
+        }
+    }
+    //
+    p{
+        color: #3f3f3f;
+        text-align: left;
+        margin-left: 10%;
+    }
+    button{
+        width: 150px;
+        border: solid 2px white;
+        color: white;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top:5%;
+        background-color: transparent;
+    }
+    button:hover{
+        background-color: grey;
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+}
+
+.four_parts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    p{
+        color: black;
+        font-size: 15px;
+    }
+}
+
+.portfolio_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: grey;
+    padding: 20px;
+    
+    .four_images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    img{
+        width: 300px;
+        height: 230px;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+    .queen_image{
+        width: 500px;
+        height: 490px;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+}
+
+  
+  @media screen and (max-width: 600px){
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+//   position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+    .prev, .next,.text {
+        font-size: 11px;
+    }
+    .first_section{
+        background: url("../images/Code4CT-homepage.jpg") center,linear-gradient(180deg,#2b3946,#384a5b);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0em 0;
+        color: white;
+        
+      }
+      article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        background-color: rgba(227, 84, 187, 0.5);
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20px;
+        padding-top: 10px;
+        
+    }
+    .four_parts{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: white;
+        text-align: center;
+        padding-top: 50px;
+        img{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        p{
+            color: black;
+            font-size: 100%;
+        }
+    }
+    .second_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        
+        p{
+            color: black;
+            margin: 2%;
+        }
+        .four_images{
+            
+            img{
+                padding: 10px;
+                width: 300px;
+                height: 250px;
+                margin: 0 auto;
+            }
+        }
+        h2{
+            margin: 2%;
+        }
+
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top:5%;
+            margin-bottom: 2%;
+            background-color: transparent;
+        }
+    }
+    .portfolio_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+  }
+  
+  

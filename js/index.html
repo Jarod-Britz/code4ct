@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <title>Code 4 Cape Town</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"><img src="../images/code4ct-logo-1.jpg"></a>
+            <a href="#news">Home</a>
+            <a href="#contact">About</a>
+            <a href="#about">Courses</a>
+            <a href="#about">Portfolio</a>
+            <a href="#about">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+            <!-- <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div> -->
+        </div>
+    </nav>    
+        
+    <div id="container">
+
+        <div class="slideshow_container">
+            <section class="first_section mySlides fade">
+                <article>
+                    <h1>Code for Cape Town</h1>
+                    <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+                    <button type="button">START CODING</button><button type="button">READ MORE</button>
+                </article>  
+            </section>
+        
+        
+            <div class="mySlides fade">
+                <img src="../images/code4ct_homeslider2.jpg" alt="">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../images/background2.png" alt="">
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            
+        </div>
+
+            <div class="second_section">
+                <section>
+                    <h2>WHO WE ARE</h2>
+ 
+
+                    <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
+                    <br>
+                    <p>These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy.  It is estimated that nearly 75000 such jobs will come online in South Africa within the next five years.  These digital jobs will mostly be driven by the ICT, Business Process Outsourcing (BPO), and the financial services industries.  These are the fastest growing sectors in our economy.  They are also the sectors that have the highest demand for entry-level digital skills.</p>
+                    <button type="button">READ MORE</button>
+                </section>
+                <section class="four_images">
+                    <img src="../images/code4ct_girls.jpg" alt="">
+                    <img src="../images/code4ct_girls2.jpg" alt="">
+                    <img src="../images/code4ct_girls3.jpg" alt="">
+                    <img src="../images/code4ct_girls_4.jpg" alt="">
+                </section>
+            </div>
+    
+            <div class="four_parts">
+                <section>
+                    <img src="../images/coding.png" alt="coding">
+                    <h2>Coding</h2>
+                    <p>Learn how to build your own<br>websites using HTML, CSS, JavaScript<br>& JQuery. Go on to explore exciting<br>modules from game development to<br>user experience design.</p>
+                    
+                </section>
+                <section>
+                    <img src="../images/communication.png" alt="communication">
+                    <h2>Communication</h2>
+                    <p>Learn how to pitch ideas, represent<br>yourself online, communicate<br>professionally and work with online<br>collaboration tools.</p>
+                    
+                </section>
+                <section>
+                    <img src="../images/problem_solving.png" alt="problem solving">
+                    <h2>Problem Solving</h2>
+                    <p>Apply your coding skills to issues<br>you are interested in. You will learn<br>how to tackle complex problems<br>using the design thinking process.</p>
+                    
+                </section>
+                <section>
+                    <img src="../images/career_guidence.png" alt="career guidence">
+                    <h2>Career Guidance</h2>
+                    <p>Explore future options by meeting<br>different companies doing exciting<br>things with technology. We offer<br>career testing and connect you to<br>our network of study institutions<br>and bursary programs.</p>
+                </section>
+            </div>
+
+
+            <section class="portfolio_section">
+                <figure class="four_images">
+                    <img src="../images/Capture2.PNG" alt="">
+                    <img src="../images/Capture3.PNG" alt="">
+                    <img src="../images/Capture.PNG" alt="">
+                    <img src="../images/Capture5.PNG" alt="">
+                </figure>
+                <div>
+                   <img src="../images/Capture1.PNG" alt="" class="queen_image">
+                </div>
+            </section>
+        </div>
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    var slidesIndex = 1;
+nextSlides(slidesIndex);
+
+function plusSlides(n) {
+  nextSlides(slidesIndex += n);
+}
+
+function currentSlide(n) {
+  nextSlides(slidesIndex = n);
+}
+
+function nextSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slidesIndex = 1}    
+  if (n < 1) {slidesIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slidesIndex-1].style.display = "block";  
+  dots[slidesIndex-1].className += " active";
+}
+        </script>
+        
+        </body>
+</html>
