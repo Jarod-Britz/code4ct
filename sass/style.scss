@@ -1,144 +1,843 @@
-body{
-    background-color: black;
-}
-.topnav{
-    overflow: hidden;
-    padding: 15px;
-}
-.topnav .icon{
-    display: none;
-}
-.active{
-    background-color: #ddd;
-    color: black;
-}
-#container{
+//Start of the css
+//Adding a font to the entire page
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  //Container for the whole page
+  #container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
 }
-nav{
-    padding: 10px;
-    text-align: center;
+  //styling the nav
+.nav{
     background-color: white;
-    border: solid 2px pink;
-    position: sticky;
-    top: 1.5%;
+    border-bottom: 1px solid pink;
+    height: 70px;
+    line-height: 60px;
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    //Editing the logo
+    img{
+        float: left;
+        width: 150px;
+        height: 50px;
+    }
+}
     
-    div{
-        img{
-            height: 40px;
-            border: black;
-            float: left;
-            position:absolute;
-            left:35px;
-            top:15px;  
-        }
+    //Adding a margin to the left of the icon when displayed
+    .menu{
+        margin: 0 30px 0 0;
     }
-}
-.topnav a{
-    text-decoration: none;
-    color: pink;
-    padding: 10px;
-    border: solid 2px pink;
-    border-radius: 12px;
-    display: inline;
-}
-.topnav a:hover{
-    color: purple;
-    border: solid 2px purple;
-}
-#reset{
-    color: none;
-    padding: 0;
-    border: none;
-}
+    //Styling the links
+    .menu a{
+        z-index: 1;
+        font-size: 20px;
+        text-decoration: none;
+        clear: right;
+        color: pink;
+        margin: 0 10px;
+        line-height: 60px;
+    }
+    .menu a:hover{
+        color: purple;
+    }
+    //Styling the hamburger menu icon
+    label{
+        width: 26px;
+        margin: 0 20px 0 0;
+        font-size: 26px;
+        line-height: 60px;
+        display: none;
+        float: right;
+        color:#56bdbf;
+    }
+    //Not displaying the checkbox
+    #toggle{
+        display: none;
+    }
 
-section{
-    background: url("../images/Code4CT-homepage.jpg") center,linear-gradient(180deg,#2b3946,#384a5b);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 13em 0;
-    color: white;
-    article{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: rgba(227, 84, 187, 0.5);
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 20px;
+  .search-container {
+    float: right;
+  
+  //The input for the search bar
+  input[type=text] {
+    margin-top: 10%;
+    font-size: 15px;
+    border: none;
+    float: right;
+  }
+}
+  //The search button
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8%;
+    margin-right: 16px;
+    background: pink;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  //Adding a hover effect over the search button
+  .search-container button:hover {
+    background: pink;
+  }
+  
+  .mySlides {
+      display: none
     }
+    //Container for the slideshow
+    .slideshow_container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        //Sizing the images
+        img{
+            width: 100%;
+        }
+      }
+      
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 1% 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .dot:hover {
+        background-color: #717171;
+        /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 12s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+  }
+      }
+    //Section with slider  
+    .first_background{
+        background: url("../images/Code4CT-homepage.jpg") center,linear-gradient(180deg,#2b3946,#384a5b);
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+        padding: 9em 26%;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+      }
+      .second_background{
+        background: url("../images/background2.png") center,linear-gradient(180deg,#2b3946,#384a5b);
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+        padding: 9em 26%;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+      }
+      .third_background{
+        background: url("../images/background3.jpg") center,linear-gradient(180deg,#2b3946,#384a5b);
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+        padding: 9em 26%;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+      }
+      .buttons{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          margin: 0 20%;;
+      }
+      
+  //Making a grid for the heading and paragraph
+  article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(400, 120, 187, 0.5);
+    padding: 20px;
+    //Styling the heading
     h1{
+        margin: 0;
         text-align: center;
         font-size: 40px;
         opacity: 1;
     }
+    //Styling the paragraph
     p{
+        margin: 0;
         text-align: center;
         font-size: 20px;
         opacity: 1;
         color: #fff;
     }
-    
 }
+    
+    
+//Who We Are section
+.second_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: white;
+    //Aligning the h2
+    h2{
+        color: black;
+        text-align: left;
+        margin-left: 10%;
+    }
+    //Putting the images in a grid
+    .four_images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        //edting the 4 images
+        img{
+            width: 300px;
+            height: 230px;
+            margin: 0 auto;
+        }
+    }
+    
+    p{
+        color: black;
+        text-align: left;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    button{
+        width: 150px;
+        border: solid 2px white;
+        color: white;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top:5%;
+        background-color: transparent;
+    }
+    button:hover{
+        background-color: grey;
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+}
+
 .four_parts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    background-color: white;
-    
+    background-color: black;
+    text-align: center;
+    padding-top: 50px;
+    h2{
+        color: pink;
+    }
     img{
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        
+    }
+    p{
+        color: pink;
+        font-size: 15px;
     }
 }
 
+//PORTFOLIO
+.portfolio{
+    background-color: white;
+    section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    li{
+        font-size: 20px;
+    }
+    article{
+        background-color: white;
+        
+        h1{
+            color: black;
+        }
+    }
+    }
+    p{
+        color: black;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 2%;
+    }
+    .four_images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+    }
+    img{
+        width: 300px;
+        height: 230px;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+    .queen_image{
+        width: 500px;
+        height: 490px;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+}
 
+//OUR TEAM
+.our_team{
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
 
-
-/* Making it responsive for the smart phone */
-@media screen and (max-width: 360px) {
-    .topnav a:not(:first-child) {
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    hr{
         display: none;
     }
-    .topnav a.icon {
-    float: right;
-    display: block;
-    }
-    .topnav.responsive {
-      position: relative;
-    }
-    .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    }
-    .topnav.responsive a {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-  .four_parts{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    background-color: white;
     img{
+        float: left;
         width: 250px;
-        height: 250px;
-        margin: 0 auto;
+    }
+    div{
+        padding: 10px;
     }
 }
-section{
+}
+
+//CAROUSEL
+.container{
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width:99%;
+    overflow: hidden;
+    background-color: black;
+  
+
+.customer_logos{
+    height: 120px;
+    width: 250%;
+    background-color: black;
+    animation-name: thing;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+   left: 100%;
+  }
+@keyframes thing{
+100%{
+    position: relative; left:-3880px;}
+    
+  }
+img{
+    width: 180px;
+    height: 180px;
+    margin-right:50px;
+}
+}
+
+
+//STATS
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: black;
+    div{
+        margin-top: 10px;
+    }
+    .line{
+        margin-top: 10%;
+        width: 50px;
+        height: 10px;
+        background-color: pink;
+        display: block;
+        margin : 0 auto;
+        margin-bottom: 10px;
+    }
+    h1{
+        margin: 0;
+        text-align: center;
+        font-size: 50px;
+        color: pink;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        color: pink
+    }
+}
+
+
+//SUBSRIBE
+.subsribe_section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    i{
+        color: pink;
+    }
+    input{
+        margin: 0 auto;
+        width: 200px;
+        height: 30px;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        
+    }
+    
+}
+
+
+//FOOTER
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 10%;
+    margin-left: 10%; 
+    .column2{
+        font-size: 25px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+  
+  @media screen and (max-width: 600px){
+     body{
+         text-align: center;
+     } 
+    .search-container {
+        float: right;
+        display: none;
+      }
+      
+
+    label{
+        display: block;
+        cursor: pointer;
+        position: sticky;
+        top: 2%;
+        right: 2%;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        background-color: white;
+        display: block;
+        border: 1px solid pink;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+
+    .prev, .next,.text {
+        font-size: 11px;
+        display: none;
+    }
+    //Container for the slideshow
+    .slideshow_container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        //Sizing the images
+        img{
+            width: 100%;
+        }
+      }
+    //Section with slider  
+    .first_background{
+        background: linear-gradient(180deg,#2b3946,#384a5b);
+        margin: 0;
+        padding: 2em 0;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+        //Making a grid for the heading and paragraph
     article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    //Styling the heading
+    h1{
+        font-size: 30px;
+    }
+    //Styling the paragraph
+    p{
+        font-size: 20px;
+    }
+}
+      }
+      .second_background{
+        background: linear-gradient(180deg,#2b3946,#384a5b);
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 2em 0;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+        //Making a grid for the heading and paragraph
+  article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    //Styling the heading
+    h1{
+        font-size: 30px;
+    }
+    //Styling the paragraph
+    p{
+        font-size: 20px;
+    }
+}
+      }
+      .third_background{
+        background: linear-gradient(180deg,#2b3946,#384a5b);
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 2em 0;
+        color: white;
+        //styling the buttons
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        //adding a hover effect for the buttons
+        button:hover{
+            background-color: grey;
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+        //Making a grid for the heading and paragraph
+  article{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding: 5px;
+      margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    //Styling the heading
+    h1{
+        font-size: 30px;
+    }
+    //Styling the paragraph
+    p{
+        font-size: 20px;
+    }
+}
+      }
+      .buttons{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          margin: 0 auto;
+      }
+    .four_parts{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: black;
+        text-align: center;
+        padding-top: 50px;
+        img{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        p{
+            color: black;
+            font-size: 15px;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+    }
+
+
+    //WHO WE ARE
+    .second_section{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        background-color: rgba(227, 84, 187, 0.5);
-        margin: 8%;
+        
+        p{
+            color: black;
+            margin: 2%;
+            font-size: 17px;
+        }
+        .four_images{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            img{
+                padding: 10px;
+                width: 300px;
+                height: 250px;
+                margin: 0 auto;
+            }
+        }
+        h2{
+            margin: 2%;
+        }
+
+        button{
+            width: 150px;
+            border: solid 2px white;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top:5%;
+            margin-bottom: 2%;
+            background-color: transparent;
+        }
+    }
+    .portfolio{
+        background-color: white;
+        section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        article{
+            background-color: white;
+            text-align: left;
+            h1{
+                color: black;
+            }
+        }
+    }
+    }
+    .our_team{
+        
+    .team{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        text-align: center;
+        img{
+            width: 80%;
+            float: none;
+        }
+    }
+}
+
+    .container{
+        position: static;
+        height: 150px;
+        overflow: hidden;
+        background-color: black;
+      
+    
+    .customer_logos{
+    height: 120px;
+    width: 1050%;
+    background-color: black;
+    animation-name: thing;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    right:-2400px;
+      }
+    @keyframes thing{
+    100%{
+        position: relative;
+        right:100%;}
+        
+      }
+    img{
+    margin-right:20px;
+    width: 130px;
+    height: 130px;
+    }
+    }
+
+    //STATS
+.stats{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+//SUBSCRIBE
+.subsribe_section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+.subscribe{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    display: inline
+    h1{
+        text-align: left;
+    }
+    
+    input{
+        text-align: center;
+        display: block;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin: 0 auto;
     }
 }
 }
+
+
+//FOOTER
+footer{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    text-align: center;
+}
+    
+  }

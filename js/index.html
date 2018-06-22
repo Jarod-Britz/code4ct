@@ -10,44 +10,64 @@
     <title>Code 4 Cape Town</title>
 </head>
 <body>
-    <nav>
-        <div class="topnav" id="myTopnav">
+    
+        <div class="nav">
             <a href="#home" class="active"><img src="../images/code4ct-logo-1.jpg"></a>
-            <a href="#news">Home</a>
-            <a href="#contact">About</a>
-            <a href="#about">Courses</a>
-            <a href="#about">Portfolio</a>
-            <a href="#about">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-            <!-- <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div> -->
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="#news">Home</a>
+                <a href="#contact">About</a>
+                <a href="#about">Courses</a>
+                <a href="#about">Portfolio</a>
+                <a href="#about">Contact Us</a>
+                <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </div>
+            
         </div>
-    </nav>    
+        
         
     <div id="container">
 
         <div class="slideshow_container">
-            <section class="first_section mySlides fade">
+            <section class="first_background mySlides fade">
                 <article>
                     <h1>Code for Cape Town</h1>
                     <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
-                    <button type="button">START CODING</button><button type="button">READ MORE</button>
+                    <section class="buttons">
+                            <button type="button">START CODING</button>
+                            <button type="button">READ MORE</button>
+                        </section>
                 </article>  
             </section>
-        
-        
-            <div class="mySlides fade">
-                <img src="../images/code4ct_homeslider2.jpg" alt="">
-            </div>
+                
+            <section class="second_background mySlides fade">
+                <article>
+                    <h1>Code for Cape Town</h1>
+                    <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+                    <section class="buttons">
+                        <button type="button">START CODING</button>
+                        <button type="button">READ MORE</button>
+                    </section>
+                    
+                </article>  
+            </section>
 
-            <div class="mySlides fade">
-                <img src="../images/background2.png" alt="">
-            </div>
+            <section class="third_background mySlides fade">
+                <article>
+                    <h1>Code for Cape Town</h1>
+                    <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+                    <section class="buttons">
+                            <button type="button">START CODING</button>
+                            <button type="button">READ MORE</button>
+                        </section>
+                </article> 
+            </section>
 
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span> 
@@ -81,25 +101,22 @@
     
             <div class="four_parts">
                 <section>
-                    <img src="../images/coding.png" alt="coding">
+                    <img src="../images/coding.png" alt="coding"><br>
                     <h2>Coding</h2>
                     <p>Learn how to build your own<br>websites using HTML, CSS, JavaScript<br>& JQuery. Go on to explore exciting<br>modules from game development to<br>user experience design.</p>
-                    
                 </section>
                 <section>
-                    <img src="../images/communication.png" alt="communication">
+                    <img src="../images/communication.png" alt="communication"><br>
                     <h2>Communication</h2>
                     <p>Learn how to pitch ideas, represent<br>yourself online, communicate<br>professionally and work with online<br>collaboration tools.</p>
-                    
                 </section>
                 <section>
-                    <img src="../images/problem_solving.png" alt="problem solving">
+                    <img src="../images/problem_solving.png" alt="problem solving"><br>
                     <h2>Problem Solving</h2>
                     <p>Apply your coding skills to issues<br>you are interested in. You will learn<br>how to tackle complex problems<br>using the design thinking process.</p>
-                    
                 </section>
                 <section>
-                    <img src="../images/career_guidence.png" alt="career guidence">
+                    <img src="../images/career_guidence.png" alt="career guidence"><br>
                     <h2>Career Guidance</h2>
                     <p>Explore future options by meeting<br>different companies doing exciting<br>things with technology. We offer<br>career testing and connect you to<br>our network of study institutions<br>and bursary programs.</p>
                 </section>
