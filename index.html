@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
     <title>Code 4 Cape Town</title>
 </head>
 <body>
@@ -17,11 +18,11 @@
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"/>
             <div class="menu">
-                <a href="#news">Home</a>
-                <a href="#contact">About</a>
-                <a href="#about">Courses</a>
-                <a href="#about">Portfolio</a>
-                <a href="#about">Contact Us</a>
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
                 <div class="search-container">
                         <form action="/action_page.php">
                             <input type="text" placeholder="Search.." name="search">
@@ -41,8 +42,8 @@
                     <h1>Code for Cape Town</h1>
                     <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
                     <section class="buttons">
-                            <button type="button">START CODING</button>
-                            <button type="button">READ MORE</button>
+                            <button type="button"><a href="courses.html">START CODING</a></button>
+                            <button type="button"><a href="about.html">READ MORE</a></button>
                         </section>
                 </article>  
             </section>
@@ -52,8 +53,8 @@
                     <h1>Code for Cape Town</h1>
                     <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
                     <section class="buttons">
-                        <button type="button">START CODING</button>
-                        <button type="button">READ MORE</button>
+                        <button type="button"><a href="courses.html">START CODING</a></button>
+                        <button type="button"><a href="about.html">READ MORE</a></button>
                     </section>
                     
                 </article>  
@@ -64,8 +65,8 @@
                     <h1>Code for Cape Town</h1>
                     <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
                     <section class="buttons">
-                            <button type="button">START CODING</button>
-                            <button type="button">READ MORE</button>
+                            <button type="button"><a href="courses.html">START CODING</a></button>
+                            <button type="button"><a href="about.html">READ MORE</a></button>
                         </section>
                 </article> 
             </section>
@@ -100,7 +101,7 @@
                 </section>
             </div>
     
-            <div class="four_parts">
+            <div class="four_icons">
                 <section>
                     <img src="images/coding.png" alt="coding"><br>
                     <h2>Coding</h2>
@@ -124,32 +125,31 @@
             </div>
 
 
-            <section>
+            <section class="portfolio">
                 
-                <article class="portfolio">
+                <article>
                     <h1>Portfolio</h1>
                     <p>Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
 
                     <p>Our alumnae that joined the program in 2014 and 2015 have now left high school and many of them have gone on to enter STEM related tertiary studies or skills development.</p>
                         
                     <p>Out of a total of 50 learners:</p>
-                    <ul>  
+                <ul>  
                     <li>23 are studying at university or a university of technology</li>
                     <li>4 are enrolled in Information Systems or Computer Science</li>
                     <li>4 are enrolled in Engineering</li>
                     <li>6 are enrolled in Science</li>
                     <li>5 are enrolled in Health</li>
-                    <li>12 are enrolled in an IT skills training program/internship</li>
+                    <li>12 are enrolled in an IT skills training program/<br>internship</li>
                 </ul>  
                 </article>
-            <section class="portfolio_section"> 
+            
                 <figure class="four_images">
                     <img src="images/Capture2.PNG" alt="">
                     <img src="images/Capture3.PNG" alt="">
                     <img src="images/Capture.PNG" alt="">
                     <img src="images/Capture5.PNG" alt="">
                 </figure>
-            </section>
         </section>
 
             <section class="our_team">
@@ -247,7 +247,7 @@
                 <section class="column1">
                     <h1><i class="fas fa-phone-volume"></i>021 685 0991</h1>
                     <h1><i class="fas fa-envelope-square"></i>info@code4ct.com </h1>
-                    <h1><i class="far fa-compass"></i>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915  </h1>
+                    <h1><i class="far fa-compass"></i>Innovate South Africa,<br>403 Old Castle Brewery,<br> 6 Beach Rd,<br> Woodstock,<br> Cape Town,<br> 7915  </h1>
 
                 </section>
                 <section class="column2">
@@ -265,6 +265,13 @@
                 </section>
             </footer>
 
+            <div class="copyright">
+                <section><p>copyright©2018 PRIVACY POLICY</p></section>
+                <section><h1><i class="fa fa-facebook"></i></h1></section>
+                    
+                
+            </div>
+
 
             
             
@@ -273,14 +280,6 @@
         </div>
         
         <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
 
         var slideIndex = 0;
         showSlides();
@@ -364,60 +363,7 @@ var timer=setInterval(function(){
 
 
 
-// function coffeeCalc(){
-//     if(up==true&&coffeeValue<=coffee){
-//         coffeeValue += increment
 
-//         if(coffeeValue === coffee){
-//             up = false;
-//         }
-//     }
-//     document.getElementById('coffee').innerHTML = coffeeValue;
-// }
-// setInterval(coffeeCalc, 0.5);
-
-// function girlsCalc(){
-//     if(up==true&&girlsValue<=girls){
-//         girlsValue += increment
-
-//         if(girlsValue === girls){
-//             up = false;
-//         }
-//     }
-//     document.getElementById('girls').innerHTML = girlsValue;
-// }
-// setInterval(girlsCalc, 0.1);
-
-// function projectsCalc(){
-//     if(up==true&&projectsValue<=projects){
-//         projectsValue += increment
-
-//         if(projectsValue === projects){
-//             up=false;
-//         }
-//     }
-//     document.getElementById('projects').innerHTML = projectsValue;
-// }
-// setInterval(projectsCalc, 0.1);
-
-// function hoursCalc(){
-//     if(up==true&&hoursValue<=hours){
-//         hoursValue += increment
-
-//         if(hoursValue === hours){
-//             up = false;
-//         }
-//     }
-//     document.getElementById('hours').innerHTML = hoursValue;
-// } 
-// setInterval(hoursCalc, 0.1);
-
-// var coffee
-// function coffee(){
-
-// }
-
-// setInterval(hoursCalc, 0.001);
 
         </script>
         

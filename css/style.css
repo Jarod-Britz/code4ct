@@ -144,6 +144,9 @@ label {
     padding: 10px;
     margin: 0 auto;
     background-color: transparent; }
+    .first_background button a {
+      text-decoration: none;
+      color: white; }
   .first_background button:hover {
     background-color: grey;
     opacity: 0.5;
@@ -163,6 +166,9 @@ label {
     padding: 10px;
     margin: 0 auto;
     background-color: transparent; }
+    .second_background button a {
+      text-decoration: none;
+      color: white; }
   .second_background button:hover {
     background-color: grey;
     opacity: 0.5;
@@ -182,6 +188,9 @@ label {
     padding: 10px;
     margin: 0 auto;
     background-color: transparent; }
+    .third_background button a {
+      text-decoration: none;
+      color: white; }
   .third_background button:hover {
     background-color: grey;
     opacity: 0.5;
@@ -249,45 +258,40 @@ article {
     opacity: 0.5;
     transition: all 0.2s; }
 
-.four_parts {
+.four_icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   background-color: black;
   text-align: center;
   padding-top: 50px; }
-  .four_parts h2 {
+  .four_icons h2 {
     color: pink; }
-  .four_parts img {
+  .four_icons img {
     width: 100px;
     height: 100px; }
-  .four_parts p {
+  .four_icons p {
     color: pink;
     font-size: 15px; }
 
 .portfolio {
   background-color: white; }
-  .portfolio section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 20px; }
-    .portfolio section li {
+  .portfolio article {
+    background-color: white; }
+    .portfolio article h1 {
+      color: black; }
+    .portfolio article p {
+      color: black;
+      font-size: 20px;
+      text-align: left;
+      margin-left: 2%; }
+    .portfolio article li {
       font-size: 20px; }
-    .portfolio section article {
-      background-color: white; }
-      .portfolio section article h1 {
-        color: black; }
-  .portfolio p {
-    color: black;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 2%; }
   .portfolio .four_images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1fr;
-    grid-gap: 10px; }
+    padding: 20px; }
   .portfolio img {
     width: 300px;
     height: 230px;
@@ -388,18 +392,39 @@ footer {
   grid-template-rows: 1fr;
   margin-right: 10%;
   margin-left: 10%; }
+  footer .column1 {
+    text-align: center;
+    margin-top: 5%; }
   footer .column2 {
-    font-size: 25px; }
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10%; }
     footer .column2 a {
       text-decoration: none;
       color: black; }
+  footer .column3 {
+    text-align: center;
+    margin-top: 5%; }
+    footer .column3 p {
+      font-size: 17px; }
+
+.copyright {
+  background-color: pink;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; }
+  .copyright p {
+    color: black; }
 
 @media screen and (max-width: 600px) {
   body {
-    text-align: center; }
+    width: 100%; }
+
+  .nav {
+    width: 100%; }
 
   .search-container {
-    float: right;
     display: none; }
 
   label {
@@ -427,6 +452,9 @@ footer {
     font-size: 11px;
     display: none; }
 
+  .dot {
+    display: none; }
+
   .slideshow_container {
     max-width: 100%;
     position: relative;
@@ -452,7 +480,7 @@ footer {
       transition: all 0.2s; }
     .first_background article {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       grid-template-rows: auto auto;
       padding: 5px;
       margin-left: 5%;
@@ -482,7 +510,7 @@ footer {
       transition: all 0.2s; }
     .second_background article {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       grid-template-rows: auto auto;
       padding: 5px;
       margin-left: 5%;
@@ -512,7 +540,7 @@ footer {
       transition: all 0.2s; }
     .third_background article {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       grid-template-rows: auto auto;
       padding: 5px;
       margin-left: 5%;
@@ -525,43 +553,43 @@ footer {
 
   .buttons {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     margin: 0 auto; }
 
-  .four_parts {
+  .four_icons {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
     background-color: black;
     text-align: center;
     padding-top: 50px; }
-    .four_parts img {
-      width: 150px;
-      height: 150px;
+    .four_icons img {
+      width: 120px;
+      height: 120px;
       margin: 0 auto; }
-    .four_parts p {
-      color: black;
-      font-size: 15px;
-      margin-right: 5%;
-      margin-left: 5%; }
+    .four_icons p {
+      color: pink;
+      font-size: 18px;
+      margin-right: 0;
+      margin-left: 0; }
 
   .second_section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto; }
     .second_section p {
       color: black;
-      margin: 2%;
+      margin: 0;
       font-size: 17px; }
     .second_section .four_images {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       grid-template-rows: auto auto auto auto; }
       .second_section .four_images img {
         padding: 10px;
-        width: 300px;
-        height: 250px;
+        width: 250px;
+        height: 200px;
         margin: 0 auto; }
     .second_section h2 {
       margin: 2%; }
@@ -577,20 +605,36 @@ footer {
 
   .portfolio {
     background-color: white; }
-    .portfolio section {
+    .portfolio article {
+      background-color: white; }
+      .portfolio article h1 {
+        color: black; }
+      .portfolio article p {
+        color: black;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 2%; }
+      .portfolio article li {
+        font-size: 20px; }
+    .portfolio .four_images {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      padding: 20px; }
-      .portfolio section article {
-        background-color: white;
-        text-align: left; }
-        .portfolio section article h1 {
-          color: black; }
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      padding: 0; }
+    .portfolio img {
+      width: 270px;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 3%; }
+    .portfolio .queen_image {
+      width: 270px;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 3%; }
 
   .our_team .team {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     text-align: center; }
     .our_team .team img {
@@ -599,7 +643,9 @@ footer {
 
   .container {
     position: static;
-    height: 150px;
+    height: 200px;
+    border: 1px solid black;
+    width: 99%;
     overflow: hidden;
     background-color: black; }
     .container .customer_logos {
@@ -612,29 +658,29 @@ footer {
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       position: relative;
-      right: -2400px; }
+      left: 100%; }
   @keyframes thing {
     100% {
       position: relative;
-      right: 100%; } }
+      left: -3880px; } }
     .container img {
-      margin-right: 20px;
-      width: 130px;
-      height: 130px; }
+      width: 180px;
+      height: 180px;
+      margin-right: 50px; }
 
   .stats {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto; }
 
   .subsribe_section {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     text-align: center; }
     .subsribe_section .subscribe {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       grid-template-rows: auto auto;
       display: inline h1;
         display-text-align: left; }
@@ -648,10 +694,11 @@ footer {
 
   footer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     margin-right: 10%;
     margin-left: 10%;
-    text-align: center; } }
+    text-align: center;
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
