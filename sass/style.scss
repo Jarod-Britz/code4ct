@@ -525,12 +525,24 @@ footer{
 }
 .copyright{
     background-color: pink;
-    height: 50px;
+    height: 40px;
+    line-height: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     p{
         color: black;
+        line-height: 40px;
+        margin: 0;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: auto;
+        i{
+            font-size: 20px;
+            line-height: 40px;
+        }
     }
 }
   
@@ -904,5 +916,20 @@ footer{
     text-align: center;
     margin: 0;
 }
-    
+    //FOOTER
+footer{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    text-align: center;
+    margin: 0;
+}
+
+.copyright{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
   }

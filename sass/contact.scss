@@ -1,0 +1,283 @@
+//Start of the css
+//Adding a font to the entire page
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  //Container for the whole page
+  #container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+  //styling the nav
+.nav{
+    background-color: white;
+    border-bottom: 1px solid pink;
+    height: 70px;
+    line-height: 60px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    //Editing the logo
+    img{
+        float: left;
+        width: 150px;
+        height: 50px;
+    }
+}
+    
+    //Adding a margin to the left of the icon when displayed
+    .menu{
+        margin: 0 30px 0 0;
+    }
+    //Styling the links
+    .menu a{
+        z-index: 1;
+        font-size: 20px;
+        text-decoration: none;
+        clear: right;
+        color: pink;
+        margin: 0 10px;
+        line-height: 60px;
+    }
+    .menu a:hover{
+        color: purple;
+    }
+    //Styling the hamburger menu icon
+    label{
+        width: 26px;
+        margin: 0 20px 0 0;
+        font-size: 26px;
+        line-height: 60px;
+        display: none;
+        float: right;
+        color:#56bdbf;
+    }
+    //Not displaying the checkbox
+    #toggle{
+        display: none;
+    }
+
+  .search-container {
+    float: right;
+  
+  //The input for the search bar
+  input[type=text] {
+    margin-top: 10%;
+    font-size: 15px;
+    border: none;
+    float: right;
+  }
+}
+  //The search button
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8%;
+    margin-right: 16px;
+    background: pink;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  //Adding a hover effect over the search button
+  .search-container button:hover {
+    background: pink;
+  }
+
+  .home_contact{
+      padding-top: 10%;
+      padding-bottom: 10%;
+      text-align: center;
+      background-color: #eaeae1;
+  }
+
+  .contact_section{
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      
+  
+
+  .sendAMessage{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      input{
+          font-size: 20px;
+          height: 40px;
+      }
+      textarea{
+          grid-column: 1/4;
+          font-size: 20px;
+      }
+      button{
+          width: 150px;
+          height: 40px;
+          background-color: pink;
+          color: white;
+          font-size: 17px;
+      }
+  }
+  .contact_info{
+      margin-left: 2%;
+      p{
+          line-height: 20px;
+      }
+  }
+}
+
+  iframe{
+      margin-top: 5%;
+  }
+
+
+  //FOOTER
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    .column1{
+        text-align: center;
+        margin-top: 5%;
+    } 
+    .column2{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10%;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .column3{
+        text-align: center;
+        margin-top: 5%;
+        p{
+            font-size: 17px;
+        }
+    }
+}
+.copyright{
+    background-color: pink;
+    height: 40px;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    p{
+        color: black;
+        line-height: 40px;
+        margin: 0;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: auto;
+        i{
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+   .nav{
+        width: 100%;
+    }
+   .search-container {
+       display: none;
+     }
+
+   label{
+       display: block;
+       cursor: pointer;
+       position: sticky;
+       top: 2%;
+       right: 2%;
+   }
+   .menu{
+       text-align: center;
+       width: 100%;
+       display: none;
+   }
+   .menu a{
+       background-color: white;
+       display: block;
+       border: 1px solid pink;
+       margin: 0;
+   }
+   #toggle:checked + .menu{
+       display: block;
+   }
+
+   
+   .contact_section{
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: auto auto;
+      .sendAMessage{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        
+        input{
+            font-size: 20px;
+            height: 40px;
+        }
+        textarea{
+            grid-column: 1/2;
+            font-size: 20px;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            background-color: pink;
+            color: white;
+            font-size: 17px;
+        }
+    }
+   }
+
+
+
+
+
+
+
+
+
+
+
+   //FOOTER
+footer{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    text-align: center;
+    margin: 0;
+}
+
+.copyright{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+}
+
+
