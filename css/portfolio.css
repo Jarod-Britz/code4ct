@@ -113,52 +113,40 @@ label {
 .search-container button:hover {
   background: pink; }
 
-.home_contact {
+.home_portfolio {
   padding-top: 10%;
   padding-bottom: 10%;
   text-align: center;
   background-color: #eaeae1; }
-  .home_contact h1 {
+  .home_portfolio h1 {
     margin: 0; }
 
-h1 {
-  margin-left: 5%; }
-
-.contact_section {
-  margin-top: 2%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .contact_section .sendAMessage {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px; }
-    .contact_section .sendAMessage input {
-      font-size: 20px;
-      height: 40px; }
-    .contact_section .sendAMessage textarea {
-      grid-column: 1/4;
-      font-size: 20px; }
-    .contact_section .sendAMessage button {
-      width: 150px;
-      height: 40px;
-      background-color: pink;
-      color: white;
-      font-size: 17px;
-      border-radius: 5px; }
-    .contact_section .sendAMessage button:hover {
-      background-color: purple; }
-  .contact_section .contact_info {
-    margin-left: 5%; }
-    .contact_section .contact_info p {
-      line-height: 20px;
-      font-size: 20px; }
-
-iframe {
-  margin-top: 5%; }
+.container {
+  position: static;
+  height: 200px;
+  border: 1px solid black;
+  width: 99%;
+  overflow: hidden;
+  background-color: black; }
+  .container .customer_logos {
+    height: 120px;
+    width: 250%;
+    background-color: black;
+    animation-name: thing;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 100%; }
+@keyframes thing {
+  100% {
+    position: relative;
+    left: -3880px; } }
+  .container img {
+    width: 180px;
+    height: 180px;
+    margin-right: 50px; }
 
 footer {
   display: grid;
@@ -204,7 +192,8 @@ footer {
   .copyright .icons {
     display: grid;
     grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    background-color: pink; }
     .copyright .icons i {
       font-size: 20px;
       line-height: 40px; }
@@ -240,27 +229,41 @@ footer {
   #toggle:checked + .menu {
     display: block; }
 
-  .contact_section {
-    margin-top: 2%;
+  .container {
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width: 99%;
+    overflow: hidden;
+    background-color: black; }
+    .container .customer_logos {
+      height: 120px;
+      width: 1050%;
+      background-color: black;
+      animation-name: thing;
+      animation-duration: 15s;
+      animation-timing-function: ease-in;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      position: relative;
+      left: 100%; }
+  @keyframes thing {
+    100% {
+      position: relative;
+      left: -3880px; } }
+    .container img {
+      width: 180px;
+      height: 180px;
+      margin-right: 50px; }
+
+  footer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto; }
-    .contact_section .sendAMessage {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto; }
-      .contact_section .sendAMessage input {
-        font-size: 20px;
-        height: 40px; }
-      .contact_section .sendAMessage textarea {
-        grid-column: 1/2;
-        font-size: 20px; }
-      .contact_section .sendAMessage button {
-        width: 150px;
-        height: 40px;
-        background-color: pink;
-        color: white;
-        font-size: 17px; }
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    margin: 0; }
 
   footer {
     display: grid;
@@ -274,6 +277,10 @@ footer {
   .copyright {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto; } }
+    grid-template-rows: auto auto; }
+    .copyright p {
+      text-align: center; }
+    .copyright i {
+      margin: 0 auto; } }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=portfolio.css.map */

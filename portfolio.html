@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+        <div class='thetop'></div>
+        <div class='scrolltop'>
+            <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+        </div>
+
+
+        <div class="nav">
+                <a href="index.html"><img src="images/code4ct-logo-1.jpg"></a>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact Us</a>
+                    <div class="search-container">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                </div>
+                </div>
+
+                <section class="home_portfolio">
+                        <h1>PORTFOLIO</h1>
+                        <h3>HOME<i class="fas fa-arrow-right"></i> PORTFOLIO</h3>
+                </section>
+
+
+                <!-- <section class="cards">
+                        <img src="images/portfolio1.jpg" alt="Sample photo">
+                        <img src="images/portfolio2.jpg" alt="Sample photo">
+                        <img src="images/portfolio3.jpg" alt="Sample photo">
+                        <img src="images/portfolio4.jpg" alt="Sample photo">
+                        <img src="images/portfolio6.jpg" alt="Sample photo">
+                        <img src="images/portfolio7.jpg" alt="Sample photo">
+                        <img src="images/portfolio8.jpg" alt="Sample photo">
+                        <img src="images/code4ct_girls.jpg" alt="Sample photo">
+                        <img src="images/code4ct_girls2.jpg" alt="Sample photo">
+                </section> -->
+
+
+
+
+                <div class="container">
+                        <section class="customer_logos">
+                            <img src="images/logo1.png">
+                            <img src="images/logo2.png">
+                            <img src="images/logo3.png">
+                            <img src="images/logo4.png">
+                            <img src="images/logo5.png">
+                            <img src="images/logo6.png">
+                            <img src="images/logo7.png">
+                            <img src="images/logo8.png">
+                            <img src="images/logo9.png">
+                            <img src="images/logo10.png">
+                            <img src="images/logo11.png">
+                            <img src="images/logo12.png">
+                            <img src="images/logo13.png">
+                            <img src="images/logo14.png">
+                            <img src="images/logo15.png">
+                            <img src="images/logo16.png">
+                        </section>
+                    </div>
+
+                <footer>
+                        <section class="column1">
+                            <h1><i class="fas fa-phone-volume"></i>021 685 0991</h1>
+                            <h1><i class="fas fa-envelope-square"></i>info@code4ct.com </h1>
+                            <h1><i class="far fa-compass"></i>Innovate South Africa,<br>403 Old Castle Brewery,<br> 6 Beach Rd,<br> Woodstock,<br> Cape Town,<br> 7915  </h1>
+        
+                        </section>
+                        <section class="column2">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </section>
+                        <section class="column3">
+                            <h1>Help & support</h1>
+                            <p>Help Centre</p>
+                            <p>Free simple template</p>
+                            <p>Refund policy</p>
+                            <p>Report span</p>
+                        </section>
+                    </footer>
+        
+                    <div class="copyright">
+                        <section><p>copyright©2018 PRIVACY POLICY</p></section>
+                        <section class="icons"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-skype"></i></section>
+                    </div>
+
+                    <script>
+                    $(window).scroll(function() {
+                if ($(this).scrollTop() > 50 ) {
+                    $('.scrolltop:hidden').stop(true, true).fadeIn();
+                } else {
+                    $('.scrolltop').stop(true, true).fadeOut();
+                }
+            });
+            $(function(){$(".scroll").click(function(){
+                $("html,body").animate({
+                    scrollTop:$(".thetop").offset().top},"1000");
+                    return false
+                    })
+                    })
+                    </script>
+</body>
+</html>

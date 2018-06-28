@@ -8,6 +8,48 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto auto; }
 
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px; }
+
+.scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #b2b2b2;
+  background: rgba(178, 178, 178, 0.7);
+  padding: 20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
+.scroll:hover {
+  background: #b2b2b2;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
+.scroll:hover .fa {
+  padding-top: -10px; }
+
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
 .nav {
   background-color: white;
   border-bottom: 1px solid pink;
@@ -197,8 +239,14 @@ strong {
     width: 200px;
     height: 30px; }
   .subsribe_section button {
-    width: 100px;
-    height: 30px; }
+    width: 150px;
+    height: 40px;
+    background-color: pink;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px; }
+  .subsribe_section button:hover {
+    background-color: purple; }
 
 .subsribe_section {
   display: grid;
@@ -278,7 +326,8 @@ footer {
   .copyright .icons {
     display: grid;
     grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    background-color: pink; }
     .copyright .icons i {
       font-size: 20px;
       line-height: 40px; }
@@ -420,6 +469,57 @@ footer {
     color: white;
     padding-top: 50px; }
 
+  .container {
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width: 99%;
+    overflow: hidden;
+    background-color: black; }
+    .container .customer_logos {
+      height: 120px;
+      width: 1050%;
+      background-color: black;
+      animation-name: thing;
+      animation-duration: 15s;
+      animation-timing-function: ease-in;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      position: relative;
+      left: 100%; }
+  @keyframes thing {
+    100% {
+      position: relative;
+      left: -3880px; } }
+    .container img {
+      width: 180px;
+      height: 180px;
+      margin-right: 50px; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; }
+
+  .subsribe_section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center; }
+    .subsribe_section .subscribe {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      display: inline h1;
+        display-text-align: left; }
+      .subsribe_section .subscribe input {
+        text-align: center;
+        display: block; }
+      .subsribe_section .subscribe button {
+        width: 100px;
+        height: 30px;
+        margin: 0 auto; }
+
   footer {
     display: grid;
     grid-template-columns: auto;
@@ -432,6 +532,10 @@ footer {
   .copyright {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto; } }
+    grid-template-rows: auto auto; }
+    .copyright p {
+      text-align: center; }
+    .copyright i {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=about.css.map */

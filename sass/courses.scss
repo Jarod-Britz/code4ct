@@ -55,6 +55,7 @@ body {
 	-o-transition: 0.5s; 	
 }
 
+
   //styling the nav
 .nav{
     background-color: white;
@@ -132,66 +133,129 @@ body {
   .search-container button:hover {
     background: pink;
   }
-
-  .home_contact{
-      padding-top: 10%;
-      padding-bottom: 10%;
+  .button{
+      width: 150px;
+      height: 40px;
+      background-color: pink;
+      color: black;
+      border-radius: 12px;
+      font-size: 20px;
+  }
+  p{
       text-align: center;
+  }
+  .box{
+      border: solid 2px pink;
+      text-align: center;
+  }
+  h2{
+      text-align: center;
+  }
+  .grey{
       background-color: #eaeae1;
-      h1{
-          margin: 0;
-      }
   }
-
   h1{
-    margin-left: 5%;
+    text-align: center;
+    font-size: 40px;
   }
-  .contact_section{
-      margin-top: 2%;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto;
-      margin-left: 5%;
-      margin-right: 5%;
-  
-
-  .sendAMessage{
+  i{
+     font-size: 20px;
+     cursor: pointer; 
+  }
+  .recommendedStreams{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
       grid-gap: 10px;
-      input{
-          font-size: 20px;
-          height: 40px;
-      }
-      textarea{
-          grid-column: 1/4;
-          font-size: 20px;
-      }
-      button{
-          width: 150px;
-          height: 40px;
-          background-color: pink;
-          color: white;
-          font-size: 17px;
-          border-radius: 5px;
-      }
-      button:hover{
-          background-color: purple;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+      i{
+          color: pink;
       }
   }
-  .contact_info{
-      margin-left: 5%;
-      p{
-          line-height: 20px;
-          font-size: 20px;
-      }
-  }
-}
 
-  iframe{
-      margin-top: 5%;
+  .individualCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: pink;
+    }
   }
+
+  .beginnerCodingCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: pink;
+    }
+  }
+
+  .intermediateCodingCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: pink;
+    }
+  }
+
+  .socialInnovation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    i{
+        color: pink;
+    }
+  }
+
+  .careerAndLifeSkills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: pink;
+    }
+  }
+
+//   .basket{
+//       display: grid;
+//       grid-template-columns: ;
+//       grid-template-rows: ;
+//   }
+
+
+
+
+
 
 
   //FOOTER
@@ -203,33 +267,28 @@ footer{
     margin-left: 10%;
     .column1{
         text-align: center;
-        h1{
-            margin: 0;
-            line-height: 30px;
-        }
         margin-top: 5%;
+        h1{
+            font-size: 20px;
+        }
     } 
     .column2{
         font-size: 25px;
         text-align: center;
-        margin-top: 2%;
+        margin-top: 10%;
         a{
-            margin: 0;
             text-decoration: none;
             color: black;
-            line-height: 30px;
         }
     }
     .column3{
         text-align: center;
-        
-        p{
-            margin: 0;
-            font-size: 17px;
-            line-height: 30px;
-        }
+        margin-top: 5%;
         h1{
-            line-height: 30px;
+            font-size:20px;
+        }
+        p{
+            font-size: 17px;
         }
     }
 }
@@ -245,18 +304,17 @@ footer{
         line-height: 40px;
         margin: 0;
     }
-
     .icons{
         display: grid;
         grid-template-columns: repeat(6, auto);
         grid-template-rows: auto;
+        background-color: pink;
         i{
             font-size: 20px;
             line-height: 40px;
         }
     }
 }
-
 
 @media screen and (max-width: 600px){
     body{
@@ -291,38 +349,81 @@ footer{
        display: block;
    }
 
-   
-   .contact_section{
-      margin-top: 2%;
-      display: grid;
-      grid-template-columns:1fr;
-      grid-template-rows: auto auto;
-      .sendAMessage{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        
-        input{
-            font-size: 20px;
-            height: 40px;
-        }
-        textarea{
-            grid-column: 1/2;
-            font-size: 20px;
-        }
-        button{
-            width: 150px;
-            height: 40px;
-            background-color: pink;
-            color: white;
-            font-size: 17px;
-        }
-    }
-   }
+   .recommendedStreams{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
 
+.individualCourses{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin:0;
+}
 
+.beginnerCodingCourses{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  i{
+      color: pink;
+  }
+}
 
+.intermediateCodingCourses{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  i{
+      color: pink;
+  }
+}
 
+.socialInnovation{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  i{
+      color: pink;
+  }
+}
+
+.careerAndLifeSkills{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  i{
+      color: pink;
+  }
+}
 
 
 
@@ -340,12 +441,26 @@ footer{
     text-align: center;
     margin: 0;
 }
+    //FOOTER
+footer{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    text-align: center;
+    margin: 0;
+}
 
 .copyright{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    p{
+        text-align: center;
+    }
+    i{
+        margin: 0 auto;
+    }
 }
 }
-
-

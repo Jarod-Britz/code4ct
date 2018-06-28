@@ -8,6 +8,48 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto auto; }
 
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px; }
+
+.scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #b2b2b2;
+  background: rgba(178, 178, 178, 0.7);
+  padding: 20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
+.scroll:hover {
+  background: #b2b2b2;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
+.scroll:hover .fa {
+  padding-top: -10px; }
+
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s; }
+
 .nav {
   background-color: white;
   border-bottom: 1px solid pink;
@@ -227,7 +269,9 @@ article {
   padding-top: 2%;
   padding-bottom: 5%;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%; }
   .second_section h2 {
     color: black;
     text-align: left;
@@ -275,7 +319,9 @@ article {
     font-size: 15px; }
 
 .portfolio {
-  background-color: white; }
+  background-color: white;
+  margin-left: 8%;
+  margin-right: 5%; }
   .portfolio article {
     background-color: white; }
     .portfolio article h1 {
@@ -283,8 +329,7 @@ article {
     .portfolio article p {
       color: black;
       font-size: 20px;
-      text-align: left;
-      margin-left: 2%; }
+      text-align: left; }
     .portfolio article li {
       font-size: 20px; }
   .portfolio .four_images {
@@ -297,27 +342,27 @@ article {
     height: 230px;
     margin: 0 auto;
     margin-top: 3%; }
-  .portfolio .queen_image {
-    width: 500px;
-    height: 490px;
-    margin: 0 auto;
-    margin-top: 3%; }
 
-.our_team h1 {
-  font-size: 40px;
-  text-align: center; }
-.our_team .team {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  text-align: center; }
-  .our_team .team hr {
-    display: none; }
-  .our_team .team img {
-    float: left;
-    width: 250px; }
-  .our_team .team div {
-    padding: 10px; }
+.our_team {
+  margin-left: 10%;
+  margin-right: 10%; }
+  .our_team h1 {
+    font-size: 40px;
+    text-align: center; }
+  .our_team .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center; }
+    .our_team .team hr {
+      display: none; }
+    .our_team .team p {
+      text-align: left; }
+    .our_team .team img {
+      float: left;
+      width: 250px; }
+    .our_team .team div {
+      padding: 10px; }
 
 .container {
   position: static;
@@ -383,8 +428,14 @@ article {
     width: 200px;
     height: 30px; }
   .subsribe_section button {
-    width: 100px;
-    height: 30px; }
+    width: 150px;
+    height: 40px;
+    background-color: pink;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px; }
+  .subsribe_section button:hover {
+    background-color: purple; }
 
 footer {
   display: grid;
@@ -422,7 +473,8 @@ footer {
   .copyright .icons {
     display: grid;
     grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    background-color: pink; }
     .copyright .icons i {
       font-size: 20px;
       line-height: 40px; }
@@ -614,7 +666,8 @@ footer {
       background-color: transparent; }
 
   .portfolio {
-    background-color: white; }
+    background-color: white;
+    margin: 0; }
     .portfolio article {
       background-color: white; }
       .portfolio article h1 {
@@ -709,6 +762,24 @@ footer {
     margin-right: 10%;
     margin-left: 10%;
     text-align: center;
-    margin: 0; } }
+    margin: 0; }
+
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    margin: 0; }
+
+  .copyright {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; }
+    .copyright p {
+      text-align: center; }
+    .copyright i {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

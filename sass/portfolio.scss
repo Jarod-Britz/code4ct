@@ -55,6 +55,7 @@ body {
 	-o-transition: 0.5s; 	
 }
 
+
   //styling the nav
 .nav{
     background-color: white;
@@ -133,68 +134,75 @@ body {
     background: pink;
   }
 
-  .home_contact{
-      padding-top: 10%;
-      padding-bottom: 10%;
-      text-align: center;
-      background-color: #eaeae1;
-      h1{
-          margin: 0;
-      }
-  }
-
-  h1{
-    margin-left: 5%;
-  }
-  .contact_section{
-      margin-top: 2%;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto;
-      margin-left: 5%;
-      margin-right: 5%;
-  
-
-  .sendAMessage{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      grid-gap: 10px;
-      input{
-          font-size: 20px;
-          height: 40px;
-      }
-      textarea{
-          grid-column: 1/4;
-          font-size: 20px;
-      }
-      button{
-          width: 150px;
-          height: 40px;
-          background-color: pink;
-          color: white;
-          font-size: 17px;
-          border-radius: 5px;
-      }
-      button:hover{
-          background-color: purple;
-      }
-  }
-  .contact_info{
-      margin-left: 5%;
-      p{
-          line-height: 20px;
-          font-size: 20px;
-      }
-  }
+  .home_portfolio{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: #eaeae1;
+    h1{
+        margin: 0;
+    }
 }
 
-  iframe{
-      margin-top: 5%;
+
+// .cards {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: flex-start;
+//     flex-direction: row;
+//     max-height: 100vh;
+  
+//   img {
+//     margin: 10px;
+//     border: 3px solid #000;
+//     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+//     width: 300px;
+//     height: 250px;
+//   }
+// }
+
+
+
+
+
+
+
+//CAROUSEL
+.container{
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width:99%;
+    overflow: hidden;
+    background-color: black;
+  
+
+.customer_logos{
+    height: 120px;
+    width: 250%;
+    background-color: black;
+    animation-name: thing;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+   left: 100%;
   }
+@keyframes thing{
+100%{
+    position: relative; left:-3880px;}
+    
+  }
+img{
+    width: 180px;
+    height: 180px;
+    margin-right:50px;
+}
+}
 
 
-  //FOOTER
+//FOOTER
 footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -245,11 +253,11 @@ footer{
         line-height: 40px;
         margin: 0;
     }
-
     .icons{
         display: grid;
         grid-template-columns: repeat(6, auto);
         grid-template-rows: auto;
+        background-color: pink;
         i{
             font-size: 20px;
             line-height: 40px;
@@ -292,45 +300,55 @@ footer{
    }
 
    
-   .contact_section{
-      margin-top: 2%;
-      display: grid;
-      grid-template-columns:1fr;
-      grid-template-rows: auto auto;
-      .sendAMessage{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        
-        input{
-            font-size: 20px;
-            height: 40px;
-        }
-        textarea{
-            grid-column: 1/2;
-            font-size: 20px;
-        }
-        button{
-            width: 150px;
-            height: 40px;
-            background-color: pink;
-            color: white;
-            font-size: 17px;
-        }
-    }
-   }
 
 
 
 
+   //CAROUSEL
+.container{
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width:99%;
+    overflow: hidden;
+    background-color: black;
+  
 
+.customer_logos{
+    height: 120px;
+    width: 1050%;
+    background-color: black;
+    animation-name: thing;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+   left: 100%;
+  }
+@keyframes thing{
+100%{
+    position: relative; left:-3880px;}
+    
+  }
+img{
+    width: 180px;
+    height: 180px;
+    margin-right:50px;
+}
+}
 
-
-
-
-
-
-   //FOOTER
+//FOOTER
+footer{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    text-align: center;
+    margin: 0;
+}
+    //FOOTER
 footer{
     display:grid;
     grid-template-columns: auto;
@@ -345,7 +363,15 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    p{
+        text-align: center;
+    }
+    i{
+        margin: 0 auto;
+    }
 }
+
 }
+
 
 

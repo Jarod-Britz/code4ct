@@ -11,6 +11,50 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
 }
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+
   //styling the nav
 .nav{
     background-color: white;
@@ -277,6 +321,9 @@ body {
     padding-bottom: 5%;
     text-align: center;
     background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    
     //Aligning the h2
     h2{
         color: black;
@@ -342,6 +389,8 @@ body {
 //PORTFOLIO
 .portfolio{
     background-color: white;
+    margin-left: 8%;
+    margin-right: 5%;
     article{
         background-color: white;
         h1{
@@ -351,7 +400,6 @@ body {
             color: black;
             font-size: 20px;
             text-align: left;
-            margin-left: 2%;
         }
         li{
             font-size: 20px;
@@ -362,8 +410,6 @@ body {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 1fr;
     padding: 20px;
-    
-    
     }
     
     img{
@@ -372,16 +418,12 @@ body {
         margin: 0 auto;
         margin-top: 3%;
     }
-    .queen_image{
-        width: 500px;
-        height: 490px;
-        margin: 0 auto;
-        margin-top: 3%;
-    }
 }
 
 //OUR TEAM
 .our_team{
+    margin-left: 10%;
+    margin-right: 10%;
     h1{
         font-size: 40px;
         text-align: center;
@@ -394,6 +436,9 @@ body {
     text-align: center;
     hr{
         display: none;
+    }
+    p{
+        text-align: left;
     }
     img{
         float: left;
@@ -429,7 +474,8 @@ body {
   }
 @keyframes thing{
 100%{
-    position: relative; left:-3880px;}
+    position: relative; 
+    left:-3880px;}
     
   }
 img{
@@ -487,12 +533,18 @@ img{
         height: 30px;
     }
     button{
-        width: 100px;
-        height: 30px;
-        
+        width: 150px;
+        height: 40px;
+        background-color: pink;
+        color: white;
+        font-size: 17px;
+        border-radius: 5px;
     }
-    
+    button:hover{
+        background-color: purple;
+    }
 }
+
 
 
 //FOOTER
@@ -539,6 +591,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(6, auto);
         grid-template-rows: auto;
+        background-color: pink;
         i{
             font-size: 20px;
             line-height: 40px;
@@ -787,6 +840,7 @@ footer{
     //PORTFOLIO
 .portfolio{
     background-color: white;
+    margin: 0;
     article{
         background-color: white;
         h1{
@@ -931,5 +985,11 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    p{
+        text-align: center;
+    }
+    i{
+        margin: 0 auto;
+    }
 }
   }
