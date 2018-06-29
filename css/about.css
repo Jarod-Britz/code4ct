@@ -138,56 +138,78 @@ label {
     .code4ct .part_one a:hover {
       color: purple;
       border: solid 2px purple; }
-  .code4ct .part_two {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    font-size: 20px;
-    margin-top: 2%; }
-    .code4ct .part_two p {
-      font-size: 20px; }
-    .code4ct .part_two img {
-      width: 500px; }
 
 .whoWeAre {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   text-align: center;
   background-color: #eaeae1; }
   .whoWeAre h1 {
     text-align: left;
-    margin-top: 5%; }
+    margin-top: 2%;
+    margin-left: 2%; }
   .whoWeAre p {
-    margin-top: 5%;
-    text-align: left; }
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 10%;
+    text-align: left;
+    font-size: 17px; }
   .whoWeAre img {
-    margin-top: 5%;
-    width: 600px; }
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 760px; }
   .whoWeAre .fourparts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    margin-top: 5%; }
+    margin-left: 2%;
+    margin-right: 10%; }
     .whoWeAre .fourparts h3 {
       color: pink;
-      text-align: left; }
+      text-align: left;
+      margin: 0; }
+    .whoWeAre .fourparts article {
+      margin-top: 0; }
 
-.our_team h1 {
-  font-size: 40px;
-  text-align: center; }
-.our_team .team {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  text-align: center; }
-  .our_team .team hr {
-    display: none; }
-  .our_team .team img {
-    float: left;
-    width: 250px; }
-  .our_team .team div {
-    padding: 10px; }
+.our_team {
+  margin-left: 10%;
+  margin-right: 10%; }
+  .our_team h1 {
+    font-size: 40px;
+    text-align: center; }
+  .our_team .team {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    text-align: center; }
+    .our_team .team article {
+      text-align: left;
+      margin-left: 5%; }
+    .our_team .team .emma {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .andrea {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .tegan {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .tracy {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team hr {
+      display: none; }
+    .our_team .team img {
+      float: left;
+      width: 250px; }
+    .our_team .team div {
+      padding: 10px; }
 
 /*class timer display,grid-template-column,grid-template-rows,grid-gap,width,height,background-colour,padding-left,and colour*/
 .timer {
@@ -297,18 +319,18 @@ footer {
   margin-right: 10%;
   margin-left: 10%; }
   footer .column1 {
-    text-align: center;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-left: 20%; }
   footer .column2 {
     font-size: 25px;
-    text-align: center;
-    margin-top: 10%; }
+    margin-top: 10%;
+    margin-left: 20%; }
     footer .column2 a {
       text-decoration: none;
       color: black; }
   footer .column3 {
-    text-align: center;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-left: 20%; }
     footer .column3 p {
       font-size: 17px; }
 
@@ -332,6 +354,63 @@ footer {
       font-size: 20px;
       line-height: 40px; }
 
+@media screen and (max-width: 960px) {
+  .code4ct {
+    margin: 5% 10% 5% 10%;
+    text-align: center; }
+    .code4ct P {
+      text-align: left; }
+    .code4ct .part_one {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto; }
+    .code4ct .part_two {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto; }
+
+  .whoWeAre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; }
+    .whoWeAre h1 {
+      text-align: left;
+      margin-top: 5%; }
+    .whoWeAre p {
+      margin-top: 5%;
+      text-align: left; }
+    .whoWeAre img {
+      margin-top: 5%;
+      width: 600px; }
+    .whoWeAre .fourparts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%; }
+      .whoWeAre .fourparts h3 {
+        color: pink;
+        text-align: left; }
+
+  .our_team h1 {
+    font-size: 40px;
+    text-align: center; }
+  .our_team .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center; }
+    .our_team .team hr {
+      display: none; }
+    .our_team .team img {
+      float: left;
+      width: 250px; }
+    .our_team .team div {
+      padding: 10px; }
+
+  .container .customer_logos {
+    width: 450%; } }
 @media screen and (max-width: 600px) {
   body {
     width: 100%; }
@@ -528,6 +607,20 @@ footer {
     margin-left: 10%;
     text-align: center;
     margin: 0; }
+    footer .column1 {
+      margin: 0; }
+    footer .column2 {
+      font-size: 25px;
+      margin-top: 10%;
+      margin: 0; }
+      footer .column2 a {
+        text-decoration: none;
+        color: black; }
+    footer .column3 {
+      margin-top: 5%;
+      margin: 0; }
+      footer .column3 p {
+        font-size: 17px; }
 
   .copyright {
     display: grid;

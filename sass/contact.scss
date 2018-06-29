@@ -202,34 +202,22 @@ footer{
     margin-right: 10%;
     margin-left: 10%;
     .column1{
-        text-align: center;
-        h1{
-            margin: 0;
-            line-height: 30px;
-        }
-        margin-top: 5%;
+        margin:0;
     } 
     .column2{
         font-size: 25px;
-        text-align: center;
-        margin-top: 2%;
+        margin-top: 10%;
+        margin:0;
         a{
-            margin: 0;
             text-decoration: none;
             color: black;
-            line-height: 30px;
         }
     }
     .column3{
-        text-align: center;
-        
+        margin-top: 5%;
+        margin:0;
         p{
-            margin: 0;
             font-size: 17px;
-            line-height: 30px;
-        }
-        h1{
-            line-height: 30px;
         }
     }
 }
@@ -339,6 +327,25 @@ footer{
     margin-left: 10%; 
     text-align: center;
     margin: 0;
+    .column1{
+        margin:0;
+    } 
+    .column2{
+        font-size: 25px;
+        margin-top: 10%;
+        margin:0;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .column3{
+        margin-top: 5%;
+        margin:0;
+        p{
+            font-size: 17px;
+        }
+    }
 }
 
 .copyright{

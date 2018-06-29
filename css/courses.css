@@ -214,6 +214,68 @@ i {
   .careerAndLifeSkills i {
     color: pink; }
 
+#shopping_cart {
+  position: fixed;
+  top: 200px;
+  right: -85px;
+  height: 80px;
+  width: 80px;
+  transition: all 0.4s;
+  background: url("../images/shopping-cart.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  #shopping_cart #amountInCart {
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    transform: translate(-50%, -50%); }
+
+#shopping_list {
+  border: solid 2px pink;
+  overflow: auto;
+  display: block;
+  position: fixed;
+  top: 200px;
+  right: -305px;
+  height: 400px;
+  width: 300px;
+  transition: all 0.4s;
+  background: pink;
+  text-align: center;
+  font-family: 'Poppins'; }
+  #shopping_list button {
+    border: none;
+    outline: none;
+    background: pink;
+    color: white; }
+  #shopping_list h3 {
+    text-align: center; }
+  #shopping_list #cartBottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%; }
+    #shopping_list #cartBottom h4 {
+      float: left;
+      left: 0;
+      margin-left: 10px; }
+    #shopping_list #cartBottom button {
+      margin-right: 20px;
+      float: right;
+      border: none;
+      outline: none;
+      background: pink;
+      color: white;
+      font-family: 'Poppins';
+      padding: 5px;
+      width: 90px;
+      transition: all 0.4s; }
+      #shopping_list #cartBottom button:hover {
+        transition: all 0.4s;
+        width: 100px; }
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -221,22 +283,17 @@ footer {
   margin-right: 10%;
   margin-left: 10%; }
   footer .column1 {
-    text-align: center;
-    margin-top: 5%; }
-    footer .column1 h1 {
-      font-size: 20px; }
+    margin: 0; }
   footer .column2 {
     font-size: 25px;
-    text-align: center;
-    margin-top: 10%; }
+    margin-top: 10%;
+    margin: 0; }
     footer .column2 a {
       text-decoration: none;
       color: black; }
   footer .column3 {
-    text-align: center;
-    margin-top: 5%; }
-    footer .column3 h1 {
-      font-size: 20px; }
+    margin-top: 5%;
+    margin: 0; }
     footer .column3 p {
       font-size: 17px; }
 
@@ -260,7 +317,7 @@ footer {
       font-size: 20px;
       line-height: 40px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   body {
     width: 100%; }
 
@@ -290,6 +347,21 @@ footer {
 
   #toggle:checked + .menu {
     display: block; }
+
+  .individualCourses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .individualCourses i {
+      color: pink; } }
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%; }
 
   .recommendedStreams {
     display: grid;
@@ -357,14 +429,24 @@ footer {
     .careerAndLifeSkills i {
       color: pink; }
 
-  footer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    margin-right: 10%;
-    margin-left: 10%;
-    text-align: center;
-    margin: 0; }
+  #shopping_cart {
+    position: fixed;
+    top: 200px;
+    right: -85px;
+    height: 80px;
+    width: 80px;
+    transition: all 0.4s;
+    background: url("../images/shopping-cart.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    #shopping_cart #amountInCart {
+      color: white;
+      position: absolute;
+      left: 55%;
+      top: 30%;
+      transform: translate(-50%, -50%); }
 
   footer {
     display: grid;
@@ -374,6 +456,20 @@ footer {
     margin-left: 10%;
     text-align: center;
     margin: 0; }
+    footer .column1 {
+      margin: 0; }
+    footer .column2 {
+      font-size: 25px;
+      margin-top: 10%;
+      margin: 0; }
+      footer .column2 a {
+        text-decoration: none;
+        color: black; }
+    footer .column3 {
+      margin-top: 5%;
+      margin: 0; }
+      footer .column3 p {
+        font-size: 17px; }
 
   .copyright {
     display: grid;

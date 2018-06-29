@@ -121,6 +121,48 @@ label {
   .home_portfolio h1 {
     margin: 0; }
 
+.images1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto; }
+  .images1 img {
+    width: 379px;
+    height: 300px; }
+
+#portfolio_btn {
+  grid-area: portfolio_btn;
+  border: none;
+  height: 100px;
+  position: relative;
+  font-family: 'Poppins'; }
+  #portfolio_btn #btn1 {
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 10px;
+    left: 45%;
+    top: 0%;
+    transform: translate(-50%, 50%);
+    cursor: pointer; }
+  #portfolio_btn #btn2 {
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 10px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 50%);
+    cursor: pointer; }
+  #portfolio_btn #btn3 {
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 10px;
+    left: 55%;
+    top: 0%;
+    transform: translate(-50%, 50%);
+    cursor: pointer; }
+
 .container {
   position: static;
   height: 200px;
@@ -155,28 +197,20 @@ footer {
   margin-right: 10%;
   margin-left: 10%; }
   footer .column1 {
-    text-align: center;
-    margin-top: 5%; }
-    footer .column1 h1 {
-      margin: 0;
-      line-height: 30px; }
+    margin-top: 5%;
+    margin-left: 20%; }
   footer .column2 {
     font-size: 25px;
-    text-align: center;
-    margin-top: 2%; }
+    margin-top: 10%;
+    margin-left: 20%; }
     footer .column2 a {
-      margin: 0;
       text-decoration: none;
-      color: black;
-      line-height: 30px; }
+      color: black; }
   footer .column3 {
-    text-align: center; }
+    margin-top: 5%;
+    margin-left: 20%; }
     footer .column3 p {
-      margin: 0;
-      font-size: 17px;
-      line-height: 30px; }
-    footer .column3 h1 {
-      line-height: 30px; }
+      font-size: 17px; }
 
 .copyright {
   background-color: pink;
@@ -229,6 +263,15 @@ footer {
   #toggle:checked + .menu {
     display: block; }
 
+  .images1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto); }
+    .images1 img {
+      margin: 0 auto;
+      width: 300px;
+      height: 221px; }
+
   .container {
     position: static;
     height: 200px;
@@ -273,6 +316,20 @@ footer {
     margin-left: 10%;
     text-align: center;
     margin: 0; }
+    footer .column1 {
+      margin: 0; }
+    footer .column2 {
+      font-size: 25px;
+      margin-top: 10%;
+      margin: 0; }
+      footer .column2 a {
+        text-decoration: none;
+        color: black; }
+    footer .column3 {
+      margin-top: 5%;
+      margin: 0; }
+      footer .column3 p {
+        font-size: 17px; }
 
   .copyright {
     display: grid;

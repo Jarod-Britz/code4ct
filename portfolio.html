@@ -42,20 +42,29 @@
                         <h3>HOME<i class="fas fa-arrow-right"></i> PORTFOLIO</h3>
                 </section>
 
+                
+                <section class="images1">
+                        <img src="images/portfolio1.jpg" alt="">
+                        <img src="images/portfolio2.jpg" alt="">
+                        <img src="images/portfolio3.jpg" alt="">
+                        <img src="images/portfolio4.jpg" alt="">
+                        <img src="images/portfolio5.jpg" alt="">
+                        <img src="images/portfolio6.jpg" alt="">
+                        <img src="images/portfolio7.jpg" alt="">
+                        <img src="images/portfolio8.jpg" alt="">
+                        <img src="images/portfolio9.jpg" alt="">
+                        <img src="images/portfolio10.jpg" alt="">
+                        <img src="images/portfolio11.jpg" alt="">
+                        <img src="images/portfolio12.jpg" alt="">
+                    </div>
+                </section>
+            </section>
 
-                <!-- <section class="cards">
-                        <img src="images/portfolio1.jpg" alt="Sample photo">
-                        <img src="images/portfolio2.jpg" alt="Sample photo">
-                        <img src="images/portfolio3.jpg" alt="Sample photo">
-                        <img src="images/portfolio4.jpg" alt="Sample photo">
-                        <img src="images/portfolio6.jpg" alt="Sample photo">
-                        <img src="images/portfolio7.jpg" alt="Sample photo">
-                        <img src="images/portfolio8.jpg" alt="Sample photo">
-                        <img src="images/code4ct_girls.jpg" alt="Sample photo">
-                        <img src="images/code4ct_girls2.jpg" alt="Sample photo">
-                </section> -->
-
-
+                <div id="portfolio_btn">
+                        <div id="btn1">1</div>
+                        <div id="btn2">2</div>
+                        <div id="btn3">3</div>
+                    </div>
 
 
                 <div class="container">
@@ -120,6 +129,35 @@
                     return false
                     })
                     })
+
+
+                    $(".portfolio_1").show();
+$(".portfolio_2").hide();
+$(".portfolio_3").hide();
+
+$("#btn1").click(function(){
+    $(".portfolio_1").fadeIn(500);
+    $(".portfolio_2").fadeOut(500);
+    $(".portfolio_3").fadeOut(500);
+    $(".portfolio_2").hide();
+    $(".portfolio_3").hide();
+});
+
+$("#btn2").click(function(){
+    $(".portfolio_1").fadeOut(500);
+    $(".portfolio_3").fadeOut(500);
+    $(".portfolio_2").fadeIn(500);
+    $(".portfolio_1").hide();
+    $(".portfolio_3").hide();
+});
+
+$("#btn3").click(function(){
+    $(".portfolio_1").fadeOut(500);
+    $(".portfolio_2").fadeOut(500);
+    $(".portfolio_3").fadeIn(500);
+    $(".portfolio_1").hide();
+    $(".portfolio_2").hide();
+});
                     </script>
 </body>
 </html>

@@ -1,5 +1,20 @@
 //Start of the css
 //Adding a font to the entire page
+@mixin bgImageContainer{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin bgImageCover{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+// This is the theme color
+$themeColor: #e1918a;
+
+
 body {
     width: 100%;
     margin: 0 auto;
@@ -253,6 +268,79 @@ body {
 //   }
 
 
+#shopping_cart{
+    position: fixed;
+    top: 200px;
+    right: -85px;
+    height: 80px;
+    width: 80px;
+    transition: all 0.4s;
+    background: url("../images/shopping-cart.png");
+    @include bgImageContainer;
+    cursor: pointer;
+
+    #amountInCart{
+        color: white;
+        position: absolute;
+        left: 55%;
+        top: 30%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+#shopping_list{
+    border: solid 2px pink;
+    overflow: auto;
+    display: block;
+    position: fixed;
+    top: 200px;
+    right: -305px;
+    height: 400px;
+    width: 300px;
+    transition: all 0.4s;
+    background: pink;
+    text-align: center;
+    font-family: 'Poppins';
+
+    button{
+        border: none;
+        outline: none;
+        background: pink;
+        color: white;
+    }
+    h3{
+        text-align: center;
+    }
+    #cartBottom{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+
+        h4{
+            float: left;
+            left: 0;
+            margin-left: 10px;
+        }
+        button{
+            margin-right: 20px;
+            float: right;
+            border: none;
+            outline: none;
+            background: pink;
+            color: white;
+            font-family: 'Poppins';
+            padding: 5px;
+            width: 90px;
+            transition: all 0.4s;
+            &:hover{
+                transition: all 0.4s;
+                width: 100px;
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -266,27 +354,20 @@ footer{
     margin-right: 10%;
     margin-left: 10%;
     .column1{
-        text-align: center;
-        margin-top: 5%;
-        h1{
-            font-size: 20px;
-        }
+        margin:0;
     } 
     .column2{
         font-size: 25px;
-        text-align: center;
         margin-top: 10%;
+        margin:0;
         a{
             text-decoration: none;
             color: black;
         }
     }
     .column3{
-        text-align: center;
         margin-top: 5%;
-        h1{
-            font-size:20px;
-        }
+        margin:0;
         p{
             font-size: 17px;
         }
@@ -316,7 +397,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 960px){
     body{
         width: 100%;
     }
@@ -349,6 +430,29 @@ footer{
        display: block;
    }
 
+   .individualCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: pink;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+   
+
    .recommendedStreams{
     display: grid;
     grid-template-columns: 1fr;
@@ -358,6 +462,7 @@ footer{
     padding-bottom: 5%;
     margin: 0;
 }
+    
 
 .individualCourses{
   display: grid;
@@ -425,22 +530,33 @@ footer{
   }
 }
 
+#shopping_cart{
+    position: fixed;
+    top: 200px;
+    right: -85px;
+    height: 80px;
+    width: 80px;
+    transition: all 0.4s;
+    background: url("../images/shopping-cart.png");
+    @include bgImageContainer;
+    cursor: pointer;
 
-
-
-
-
-
-   //FOOTER
-footer{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    margin-right: 10%;
-    margin-left: 10%; 
-    text-align: center;
-    margin: 0;
+    #amountInCart{
+        color: white;
+        position: absolute;
+        left: 55%;
+        top: 30%;
+        transform: translate(-50%,-50%);
+    }
 }
+
+
+
+
+
+
+
+
     //FOOTER
 footer{
     display:grid;
@@ -450,6 +566,25 @@ footer{
     margin-left: 10%; 
     text-align: center;
     margin: 0;
+    .column1{
+        margin:0;
+    } 
+    .column2{
+        font-size: 25px;
+        margin-top: 10%;
+        margin:0;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .column3{
+        margin-top: 5%;
+        margin:0;
+        p{
+            font-size: 17px;
+        }
+    }
 }
 
 .copyright{

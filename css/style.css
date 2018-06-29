@@ -332,16 +332,22 @@ article {
       text-align: left; }
     .portfolio article li {
       font-size: 20px; }
+  .portfolio .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+    .portfolio .images .queen {
+      width: 700px; }
   .portfolio .four_images {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 1fr;
-    padding: 20px; }
-  .portfolio img {
-    width: 300px;
-    height: 230px;
-    margin: 0 auto;
-    margin-top: 3%; }
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 5%; }
+    .portfolio .four_images img {
+      width: 250px;
+      height: 210px;
+      margin: 0 auto;
+      margin-top: 3%; }
 
 .our_team {
   margin-left: 10%;
@@ -444,18 +450,18 @@ footer {
   margin-right: 10%;
   margin-left: 10%; }
   footer .column1 {
-    text-align: center;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-left: 20%; }
   footer .column2 {
     font-size: 25px;
-    text-align: center;
-    margin-top: 10%; }
+    margin-top: 10%;
+    margin-left: 20%; }
     footer .column2 a {
       text-decoration: none;
       color: black; }
   footer .column3 {
-    text-align: center;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-left: 20%; }
     footer .column3 p {
       font-size: 17px; }
 
@@ -479,6 +485,79 @@ footer {
       font-size: 20px;
       line-height: 40px; }
 
+@media screen and (max-width: 960px) {
+  body {
+    width: 100%; }
+
+  .second_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .four_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: black;
+    text-align: center;
+    padding-top: 50px; }
+    .four_icons img {
+      width: 100px;
+      height: 100px; }
+
+  .container {
+    position: static;
+    height: 200px;
+    border: 1px solid black;
+    width: 99%;
+    overflow: hidden;
+    background-color: black; }
+    .container .customer_logos {
+      width: 450%; }
+
+  .portfolio {
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 5%;
+    text-align: center; }
+    .portfolio article {
+      background-color: white; }
+      .portfolio article h1 {
+        color: black; }
+      .portfolio article p {
+        color: black;
+        font-size: 20px;
+        text-align: left; }
+      .portfolio article li {
+        font-size: 20px; }
+    .portfolio .images {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto; }
+    .portfolio .four_images {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto; }
+      .portfolio .four_images img {
+        width: 250px;
+        height: 210px;
+        margin: 0 auto;
+        margin-top: 3%; }
+
+  .our_team .team {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center; }
+    .our_team .team img {
+      width: 80%;
+      float: none; } }
 @media screen and (max-width: 600px) {
   body {
     width: 100%; }
@@ -679,6 +758,12 @@ footer {
         margin-left: 2%; }
       .portfolio article li {
         font-size: 20px; }
+    .portfolio .images {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; }
+      .portfolio .images .queen {
+        width: 270px; }
     .portfolio .four_images {
       display: grid;
       grid-template-columns: auto;
@@ -772,6 +857,20 @@ footer {
     margin-left: 10%;
     text-align: center;
     margin: 0; }
+    footer .column1 {
+      margin: 0; }
+    footer .column2 {
+      font-size: 25px;
+      margin-top: 10%;
+      margin: 0; }
+      footer .column2 a {
+        text-decoration: none;
+        color: black; }
+    footer .column3 {
+      margin-top: 5%;
+      margin: 0; }
+      footer .column3 p {
+        font-size: 17px; }
 
   .copyright {
     display: grid;
