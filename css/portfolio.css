@@ -222,15 +222,16 @@ footer {
   .copyright p {
     color: black;
     line-height: 40px;
-    margin: 0; }
+    margin: 0;
+    margin-left: 3%; }
   .copyright .icons {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto;
-    background-color: pink; }
+    background-color: pink;
+    margin-right: 2%; }
     .copyright .icons i {
       font-size: 20px;
-      line-height: 40px; }
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 @media screen and (max-width: 600px) {
   body {

@@ -242,9 +242,14 @@ footer{
     grid-template-rows: 1fr;
     margin-right: 10%;
     margin-left: 10%;
+    
     .column1{
         margin-top: 5%;
         margin-left: 20%;
+        h1{
+            font-size: 20px;
+            text-align: left;
+        }
     } 
     .column2{
         font-size: 25px;
@@ -253,13 +258,19 @@ footer{
         a{
             text-decoration: none;
             color: black;
+            text-align: left;
         }
     }
     .column3{
         margin-top: 5%;
         margin-left: 20%;
+        h1{
+            text-align: left;
+            font-size: 20px;
+        }
         p{
             font-size: 17px;
+            text-align: left;
         }
     }
 }
@@ -270,19 +281,21 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    
     p{
         color: black;
         line-height: 40px;
         margin: 0;
+        margin-left: 3%;
     }
     .icons{
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        grid-template-rows: auto;
         background-color: pink;
+        margin-right: 2%;
         i{
             font-size: 20px;
             line-height: 40px;
+            float: right;
+            padding-left: 3%;
         }
     }
 }

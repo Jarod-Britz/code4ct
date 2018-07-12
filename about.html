@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/about.css">
-    <script src="js/jquery-circle-progress/dist/circle-progress.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="js/about.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/about.js"></script>
     <title>About Us</title>
 </head>
 <body>
@@ -148,32 +147,28 @@
             </section>
 
            
-    <!-- <section class="timer">
-            
-             <div class="circle" id="circle-a">
-                <strong>85%</strong>
-                <h3>Web Design</h3>
-              </div>
-          
-             <div class="circle" id="circle-b">
-                <strong>80%</strong>
-                <h3>Branding</h3>
-              </div>
-          
-             <div class="circle" id="circle-c">
-                <strong>90%</strong>
-                <h3>Photography</h3>
-              </div>
-         
-             <div class="circle" id="circle-d">
-                <strong>97%</strong>
-                <h3>Print Design</h3>
-              </div>
-            </section> -->
+            <div id="bars" class="circles">
+                <div class="bar" data-percent="80">
+                    <h3>Of our alumnae have gone on to further studies</h3>
+                    <canvas class="bar-circle" width="70" height="70"></canvas>
+                </div>
+                <div class="bar" data-percent="74">
+                    <h3>Of our alumnae have gone on to pursue STEM-related studies</h3>
+                    <canvas class="bar-circle" width="70" height="70"></canvas>
+                </div>
+                <div class="bar" data-percent="56">
+                    <h3>Of our alumnae are at university</h3>
+                    <canvas class="bar-circle" width="70" height="70"></canvas>
+                </div>
+                <div class="bar" data-percent="24">
+                    <h3>Of our alumnae are in IT skills development programmes</h3>
+                    <canvas class="bar-circle" width="70" height="70"></canvas>
+                </div>
+            </div>
 
 
             <section class="subsribe_section">
-                    <div><h1><i class="fas fa-paper-plane"></i>&nbsp&nbspSUBSCRIBE TO US</h1>
+                    <div><h1><i class="fas fa-paper-plane"></i>&nbsp&nbspSUBSCRIBE TO US</h1> 
                     </div>
                     <div class="subscribe">
                         <input type="text" placeholder="enter your email">
@@ -248,6 +243,9 @@
                     })
                     })
 
+
+
+                   
                 </script>
 </body>
 </html>

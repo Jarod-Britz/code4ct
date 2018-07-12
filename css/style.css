@@ -357,13 +357,40 @@ article {
     text-align: center; }
   .our_team .team {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr;
     text-align: center; }
+    .our_team .team article {
+      text-align: left;
+      margin-left: 5%;
+      background-color: white; }
+      .our_team .team article p {
+        color: black;
+        text-align: left;
+        margin: 0;
+        font-size: 15px; }
+    .our_team .team .emma {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .andrea {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .tegan {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
+    .our_team .team .tracy {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto; }
     .our_team .team hr {
       display: none; }
-    .our_team .team p {
-      text-align: left; }
+    .our_team .team h3 {
+      margin: 0; }
+    .our_team .team h2 {
+      margin: 0; }
     .our_team .team img {
       float: left;
       width: 250px; }
@@ -452,6 +479,8 @@ footer {
   footer .column1 {
     margin-top: 5%;
     margin-left: 20%; }
+    footer .column1 h1 {
+      font-size: 20px; }
   footer .column2 {
     font-size: 25px;
     margin-top: 10%;
@@ -475,15 +504,16 @@ footer {
   .copyright p {
     color: black;
     line-height: 40px;
-    margin: 0; }
+    margin: 0;
+    margin-left: 3%; }
   .copyright .icons {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto;
-    background-color: pink; }
+    background-color: pink;
+    margin-right: 2%; }
     .copyright .icons i {
       font-size: 20px;
-      line-height: 40px; }
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 @media screen and (max-width: 960px) {
   body {

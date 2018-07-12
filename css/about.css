@@ -211,43 +211,37 @@ label {
     .our_team .team div {
       padding: 10px; }
 
-/*class timer display,grid-template-column,grid-template-rows,grid-gap,width,height,background-colour,padding-left,and colour*/
-.timer {
+#bars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 50px;
-  width: 100%;
-  height: 250px;
-  background-color: black;
-  padding-left: 80px;
-  color: white; }
+  grid-template-rows: auto;
+  margin: 2em auto;
+  overflow: hidden; }
 
-/*class circle width,margin,display,position,and text-align*/
-.circle {
-  width: 100%;
-  margin: 6px 20px 20px;
-  display: inline-block;
-  position: relative;
-  text-align: center; }
+.circles {
+  background-color: black; }
 
-/*class timer div width,height,padding-top*/
-.timer div {
-  width: 150px;
-  height: 150px;
-  padding-top: 50px; }
-
-/*strong position,top,left,width,text-align,line-height,font-size,colour,and padding-top*/
-strong {
-  position: absolute;
-  top: 30px;
-  left: 45px;
-  width: 70px;
+.bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   text-align: center;
-  line-height: 45px;
-  font-size: 30px;
-  color: white;
-  padding-top: 50px; }
+  font-size: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.bar h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  color: pink; }
+
+.bar-circle {
+  display: block;
+  margin: 0.7em auto; }
 
 .subsribe_section {
   display: grid;
@@ -344,15 +338,16 @@ footer {
   .copyright p {
     color: black;
     line-height: 40px;
-    margin: 0; }
+    margin: 0;
+    margin-left: 3%; }
   .copyright .icons {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto;
-    background-color: pink; }
+    background-color: pink;
+    margin-right: 2%; }
     .copyright .icons i {
       font-size: 20px;
-      line-height: 40px; }
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 @media screen and (max-width: 960px) {
   .code4ct {

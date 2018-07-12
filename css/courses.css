@@ -283,19 +283,28 @@ footer {
   margin-right: 10%;
   margin-left: 10%; }
   footer .column1 {
-    margin: 0; }
+    margin-top: 5%;
+    margin-left: 20%; }
+    footer .column1 h1 {
+      font-size: 20px;
+      text-align: left; }
   footer .column2 {
     font-size: 25px;
     margin-top: 10%;
-    margin: 0; }
+    margin-left: 20%; }
     footer .column2 a {
       text-decoration: none;
-      color: black; }
+      color: black;
+      text-align: left; }
   footer .column3 {
     margin-top: 5%;
-    margin: 0; }
+    margin-left: 20%; }
+    footer .column3 h1 {
+      text-align: left;
+      font-size: 20px; }
     footer .column3 p {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: left; }
 
 .copyright {
   background-color: pink;
@@ -307,15 +316,17 @@ footer {
   .copyright p {
     color: black;
     line-height: 40px;
-    margin: 0; }
+    margin: 0;
+    text-align: left;
+    margin-left: 3%; }
   .copyright .icons {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto;
-    background-color: pink; }
+    background-color: pink;
+    margin-right: 2%; }
     .copyright .icons i {
       font-size: 20px;
-      line-height: 40px; }
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 @media screen and (max-width: 960px) {
   body {

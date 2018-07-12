@@ -194,7 +194,7 @@ body {
   }
 
 
-  //FOOTER
+//FOOTER
 footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -202,25 +202,30 @@ footer{
     margin-right: 10%;
     margin-left: 10%;
     .column1{
-        margin:0;
+        margin-top: 5%;
+        margin-left: 20%;
     } 
     .column2{
         font-size: 25px;
         margin-top: 10%;
-        margin:0;
+        margin-left: 20%;
         a{
             text-decoration: none;
             color: black;
         }
     }
     .column3{
-        margin-top: 5%;
-        margin:0;
+        margin-top: 10%;
+        margin-left: 20%;
         p{
             font-size: 17px;
         }
+        h1{
+            margin: 0;
+        }
     }
 }
+
 .copyright{
     background-color: pink;
     height: 40px;
@@ -228,19 +233,21 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    
     p{
         color: black;
         line-height: 40px;
         margin: 0;
+        margin-left: 3%;
     }
-
     .icons{
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        grid-template-rows: auto;
+        background-color: pink;
+        margin-right: 2%;
         i{
             font-size: 20px;
             line-height: 40px;
+            float: right;
+            padding-left: 3%;
         }
     }
 }

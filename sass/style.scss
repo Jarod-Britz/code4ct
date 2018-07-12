@@ -440,14 +440,48 @@ body {
 
 .team{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    article{
+        text-align: left;
+        margin-left: 5%;
+        background-color: white;
+        p{
+            color: black;
+            text-align: left;
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+    .emma{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    .andrea{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    .tegan{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    .tracy{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
     hr{
         display: none;
     }
-    p{
-        text-align: left;
+    h3{
+        margin: 0;
+    }
+    h2{
+        margin: 0;
     }
     img{
         float: left;
@@ -566,6 +600,9 @@ footer{
     .column1{
         margin-top: 5%;
         margin-left: 20%;
+        h1{
+            font-size: 20px;
+        }
     } 
     .column2{
         font-size: 25px;
@@ -591,19 +628,21 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    
     p{
         color: black;
         line-height: 40px;
         margin: 0;
+        margin-left: 3%;
     }
     .icons{
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        grid-template-rows: auto;
         background-color: pink;
+        margin-right: 2%;
         i{
             font-size: 20px;
             line-height: 40px;
+            float: right;
+            padding-left: 3%;
         }
     }
 }
